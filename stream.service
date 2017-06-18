@@ -1,0 +1,11 @@
+[Unit]
+Description=Driveway Cam
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/stream.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
